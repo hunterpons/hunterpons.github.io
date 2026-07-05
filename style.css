@@ -1,8 +1,8 @@
 :root {
-  --bg: #f7f6f2;
-  --text: #111111;
-  --muted: #5f5f5f;
-  --rule: rgba(0, 0, 0, 0.16);
+  --bg: #fbfaf7;
+  --text: #111;
+  --muted: #666;
+  --line: #d9d6cf;
 }
 
 * {
@@ -17,12 +17,12 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.35;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.45;
 }
 
 a {
-  color: var(--text);
+  color: inherit;
   text-decoration: none;
 }
 
@@ -31,112 +31,113 @@ a:hover {
 }
 
 .topbar {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: space-between;
   gap: 2rem;
-  padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--rule);
+  padding: 1.1rem 1.4rem;
+  border-bottom: 1px solid var(--line);
   font-size: 0.95rem;
 }
 
 .site-name {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav {
   display: flex;
-  gap: 1.2rem;
   flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
 }
 
 main {
-  padding: 5rem 1.5rem 3rem;
+  padding: 4rem 1.4rem 2rem;
 }
 
-.intro {
-  max-width: 980px;
-  margin-bottom: 8rem;
+.hero {
+  max-width: 900px;
+  margin-bottom: 7rem;
 }
 
 .kicker {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
   color: var(--muted);
-  font-size: 1rem;
 }
 
 h1 {
-  max-width: 850px;
-  margin: 0 0 2rem;
-  font-size: clamp(2.6rem, 7vw, 6.5rem);
-  line-height: 0.95;
+  margin: 0 0 1.5rem;
+  max-width: 780px;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 1;
   letter-spacing: -0.055em;
   font-weight: 500;
 }
 
-.intro-text {
-  max-width: 620px;
+.lede {
   margin: 0;
-  font-size: 1.15rem;
+  max-width: 620px;
+  font-size: 1.08rem;
   color: var(--muted);
 }
 
-.section {
-  border-top: 1px solid var(--rule);
-  padding: 2rem 0 3rem;
+.block {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 4rem;
+  grid-template-columns: 180px 1fr;
+  gap: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--line);
 }
 
-.section-label {
+.block-title {
   color: var(--muted);
   font-size: 0.95rem;
 }
 
-.item {
-  max-width: 850px;
-  border-bottom: 1px solid var(--rule);
+.entry {
+  max-width: 760px;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
 }
 
-.item:last-child {
-  border-bottom: none;
+.entry:last-child {
   margin-bottom: 0;
+  border-bottom: none;
 }
 
 h2 {
-  margin: 0 0 0.75rem;
-  font-size: clamp(1.8rem, 4vw, 3.75rem);
-  line-height: 1;
-  letter-spacing: -0.045em;
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.6rem, 3.8vw, 3.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
   font-weight: 500;
 }
 
-.item p {
-  max-width: 620px;
-  margin: 0 0 1rem;
-  font-size: 1.05rem;
+.entry p {
+  margin: 0 0 0.85rem;
+  max-width: 600px;
   color: var(--muted);
+  font-size: 1.02rem;
 }
 
-.info-list {
-  max-width: 780px;
-  border-top: 1px solid var(--rule);
+.info-card {
+  max-width: 720px;
+  border-top: 1px solid var(--line);
 }
 
-.info-list a {
+.info-card a {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 2rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--rule);
-  font-size: 1.1rem;
+  gap: 1.5rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.05rem;
 }
 
 footer {
-  border-top: 1px solid var(--rule);
-  padding: 1.5rem;
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 1.4rem;
   color: var(--muted);
   font-size: 0.9rem;
 }
@@ -145,29 +146,30 @@ footer p {
   margin: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
   .topbar {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  nav {
+    justify-content: flex-start;
   }
 
   main {
-    padding: 3rem 1rem;
+    padding-top: 3rem;
   }
 
-  .intro {
+  .hero {
     margin-bottom: 5rem;
   }
 
-  .section {
+  .block {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   h1 {
-    font-size: clamp(2.6rem, 12vw, 4.5rem);
-  }
-
-  .info-list a {
-    font-size: 1rem;
+    font-size: clamp(2.2rem, 11vw, 4rem);
   }
 }
