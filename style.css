@@ -25,32 +25,6 @@ body {
   line-height: 1.45;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 16vh;
-  right: 3vw;
-  width: 38vw;
-  height: 58vh;
-  pointer-events: none;
-  opacity: 0.18;
-  z-index: 0;
-  background:
-    radial-gradient(circle at 16% 20%, var(--accent) 0 5px, transparent 6px),
-    radial-gradient(circle at 72% 16%, var(--accent) 0 5px, transparent 6px),
-    radial-gradient(circle at 38% 58%, var(--accent) 0 5px, transparent 6px),
-    radial-gradient(circle at 84% 72%, var(--accent) 0 5px, transparent 6px),
-    linear-gradient(24deg, transparent 48.8%, var(--accent) 49.5%, var(--accent) 50.5%, transparent 51.2%),
-    linear-gradient(132deg, transparent 48.8%, var(--accent) 49.5%, var(--accent) 50.5%, transparent 51.2%);
-}
-
-header,
-main,
-footer {
-  position: relative;
-  z-index: 1;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -121,11 +95,10 @@ h1 {
 .hero-note {
   max-width: 320px;
   margin: 0 0 0.25rem;
+  padding-top: 2.5rem;
   color: var(--muted);
   font-size: 1.22rem;
   line-height: 1.68;
-  align-self: end;
-  transform: translateY(2rem);
 }
 
 .section {
@@ -329,10 +302,10 @@ footer p {
     padding-bottom: 3rem;
   }
 
-  .hero-note {
-    max-width: 100%;
-    padding-top: 0;
-  }
+.hero-note {
+  max-width: 100%;
+  padding-top: 0;
+}
 
   h1 {
     font-size: clamp(2.5rem, 10vw, 4.5rem);
