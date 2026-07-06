@@ -28,21 +28,20 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: 18vh;
-  right: 4vw;
-  width: 34vw;
-  height: 52vh;
+  top: 16vh;
+  right: 3vw;
+  width: 38vw;
+  height: 58vh;
   pointer-events: none;
-  opacity: 0.11;
+  opacity: 0.18;
   z-index: 0;
   background:
-    radial-gradient(circle at 18% 22%, var(--accent) 0 4px, transparent 5px),
-    radial-gradient(circle at 70% 18%, var(--accent) 0 4px, transparent 5px),
-    radial-gradient(circle at 38% 58%, var(--accent) 0 4px, transparent 5px),
-    radial-gradient(circle at 82% 70%, var(--accent) 0 4px, transparent 5px),
-    linear-gradient(24deg, transparent 48%, var(--accent) 49%, var(--accent) 50%, transparent 51%),
-    linear-gradient(132deg, transparent 49%, var(--accent) 50%, transparent 51%);
-  filter: blur(0.1px);
+    radial-gradient(circle at 16% 20%, var(--accent) 0 5px, transparent 6px),
+    radial-gradient(circle at 72% 16%, var(--accent) 0 5px, transparent 6px),
+    radial-gradient(circle at 38% 58%, var(--accent) 0 5px, transparent 6px),
+    radial-gradient(circle at 84% 72%, var(--accent) 0 5px, transparent 6px),
+    linear-gradient(24deg, transparent 48.8%, var(--accent) 49.5%, var(--accent) 50.5%, transparent 51.2%),
+    linear-gradient(132deg, transparent 48.8%, var(--accent) 49.5%, var(--accent) 50.5%, transparent 51.2%);
 }
 
 header,
@@ -67,7 +66,7 @@ a:hover {
   align-items: flex-start;
   gap: 2rem;
   padding: 1.5rem 1.75rem;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
 }
 
 .name {
@@ -100,7 +99,7 @@ main {
 .section-label {
   margin: 0 0 1.15rem;
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 1.18rem;
   letter-spacing: 0;
 }
 
@@ -122,10 +121,11 @@ h1 {
 .hero-note {
   max-width: 320px;
   margin: 0 0 0.25rem;
-  padding-top: 2.5rem;
   color: var(--muted);
-  font-size: 1.16rem;
-  line-height: 1.65;
+  font-size: 1.22rem;
+  line-height: 1.68;
+  align-self: end;
+  transform: translateY(2rem);
 }
 
 .section {
@@ -171,7 +171,7 @@ h1 {
 }
 
 .feature a {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   border-bottom: 1px solid currentColor;
 }
 
