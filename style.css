@@ -157,11 +157,23 @@ h1 {
 }
 
 .info-summary {
+
   max-width: 680px;
-  margin: 0 0 1.5rem;
+
+  margin: 0;
+
   color: var(--muted);
+
   font-size: 1.08rem;
-  line-height: 1.55;
+
+  line-height: 1.6;
+
+}
+
+.info-summary + .info-summary {
+
+  margin-top: 0.85rem;
+
 }
 
 .info-list {
