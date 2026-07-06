@@ -39,7 +39,7 @@ a:hover {
   align-items: flex-start;
   gap: 2rem;
   padding: 1.5rem 1.75rem;
-  font-size: 0.92rem;
+  font-size: 1.02rem;
 }
 
 .name {
@@ -72,8 +72,8 @@ main {
 .section-label {
   margin: 0 0 1.15rem;
   color: var(--muted);
-  font-size: 0.9rem;
-  letter-spacing: 0.01em;
+  font-size: 1.05rem;
+  letter-spacing: 0;
 }
 
 h1 {
@@ -87,11 +87,12 @@ h1 {
 }
 
 .hero-note {
-  max-width: 360px;
-  margin: 0 0 0.25rem;
-  color: var(--muted);
-  font-size: 1.02rem;
-  line-height: 1.5;
+    max-width: 320px;
+    margin: 0 0 0.25rem;
+    padding-top: 2.5rem;
+    color: var(--muted);
+    font-size: 1.14rem;
+    line-height: 1.65;
 }
 
 .section {
@@ -137,7 +138,10 @@ h1 {
   max-width: 560px;
   margin: 0 0 1rem;
   color: var(--muted);
-  font-size: 1.03rem;
+    font-size: 1.12rem;
+
+    line-height: 1.65;
+
 }
 
 .feature a {
@@ -164,10 +168,8 @@ h1 {
 
   color: var(--muted);
 
-  font-size: 1.08rem;
-
-  line-height: 1.6;
-
+    font-size: 1.14rem;
+    line-height: 1.72;
 }
 
 .info-summary + .info-summary {
@@ -188,7 +190,7 @@ h1 {
   gap: 2rem;
   padding: 1.05rem 0;
   border-bottom: 1px solid var(--line);
-  font-size: 1.02rem;
+   font-size: 1.12rem;
 }
 
 footer {
@@ -248,4 +250,72 @@ h1 {
   max-width: 720px;
   border-top: 1px solid var(--line);
   margin-top: 4.25rem;
+}
+
+.essay-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 4rem 1.75rem 5rem;
+}
+
+.essay {
+  max-width: 760px;
+}
+
+.essay-header {
+  margin-bottom: 4rem;
+}
+
+.essay-header h1 {
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  line-height: 0.95;
+  margin-bottom: 1rem;
+}
+
+.essay-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.35rem;
+}
+
+.essay-body p,
+.references p {
+  font-size: 1.08rem;
+  line-height: 1.68;
+  margin: 0 0 1.4rem;
+}
+
+.essay-body h2 {
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 3.5rem 0 0.4rem;
+  letter-spacing: 0;
+}
+
+.essay-body h3 {
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(1.9rem, 3.5vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+}
+
+.references {
+  border-top: 1px solid var(--line);
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+.references h2 {
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.references p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
 }
