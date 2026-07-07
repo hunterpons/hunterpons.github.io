@@ -61,19 +61,19 @@ main {
 
 .hero {
 
-  min-height: 58vh;
+  min-height: 54vh;
 
   display: grid;
 
-  grid-template-columns: minmax(0, 680px) minmax(320px, 460px);
+  grid-template-columns: minmax(0, 660px) minmax(300px, 430px);
 
-  column-gap: 4rem;
+  column-gap: 3rem;
 
   align-items: end;
 
   border-bottom: 1px solid var(--line);
 
-  padding-bottom: 4.5rem;
+  padding-bottom: 4rem;
 
 }
 
@@ -108,13 +108,15 @@ h1 {
 
 .hero-note {
 
-  max-width: 430px;
+  max-width: 410px;
 
   color: var(--muted);
 
   font-size: 1.18rem;
 
   line-height: 1.65;
+
+  padding-bottom: 0.5rem;
 
 }
 
