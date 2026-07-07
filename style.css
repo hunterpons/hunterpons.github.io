@@ -89,7 +89,7 @@ main {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 620px;
   margin: 0;
   font-family: "EB Garamond", Georgia, serif;
   font-size: clamp(2.35rem, 4.7vw, 5.1rem);
@@ -99,12 +99,12 @@ h1 {
 }
 
 .hero-note {
-    width: 420px;
-    margin-top: 2.25rem;
-    margin-left: 180px;
-    color: var(--muted);
-    font-size: 1.22rem;
-    line-height: 1.68;
+  width: 420px;
+  margin-top: 2.25rem;
+  margin-left: 140px;
+  color: var(--muted);
+  font-size: 1.22rem;
+  line-height: 1.68;
 }
 
 .hero-note p {
