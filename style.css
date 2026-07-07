@@ -61,9 +61,15 @@ main {
 
 .hero {
 
-  min-height: 52vh;
+  min-height: 58vh;
 
-  display: block;
+  display: grid;
+
+  grid-template-columns: minmax(0, 680px) minmax(320px, 460px);
+
+  column-gap: 4rem;
+
+  align-items: end;
 
   border-bottom: 1px solid var(--line);
 
@@ -72,7 +78,9 @@ main {
 }
 
 .hero-main {
-    max-width: 620px;
+
+  max-width: 680px;
+
 }
 
 .kicker,
@@ -99,12 +107,15 @@ h1 {
 }
 
 .hero-note {
-    width: 420px;
-    margin-top: -120px;
-    margin-left: 520px;
-    color: var(--muted);
-    font-size: 1.22rem;
-    line-height: 1.68;
+
+  max-width: 430px;
+
+  color: var(--muted);
+
+  font-size: 1.18rem;
+
+  line-height: 1.65;
+
 }
 
 .hero-note p {
@@ -303,8 +314,21 @@ footer p {
   }
 
 .hero {
+
   min-height: auto;
+
+  grid-template-columns: 1fr;
+
+  gap: 2rem;
+
   padding-bottom: 3rem;
+
+}
+
+.hero-note {
+
+  max-width: 100%;
+
 }
 
 
