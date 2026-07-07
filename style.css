@@ -61,7 +61,7 @@ main {
 
 .hero {
 
-  min-height: 62vh;
+  min-height: 52vh;
 
   display: block;
 
@@ -99,12 +99,12 @@ h1 {
 }
 
 .hero-note {
-  width: 420px;
-  margin-top: 2.25rem;
-  margin-left: 110px;
-  color: var(--muted);
-  font-size: 1.22rem;
-  line-height: 1.68;
+    width: 420px;
+    margin-top: -120px;
+    margin-left: 520px;
+    color: var(--muted);
+    font-size: 1.22rem;
+    line-height: 1.68;
 }
 
 .hero-note p {
